@@ -26,4 +26,4 @@ browser sync.
 
 - Tên : Nguyễn Trung Hiếu
 - Ngày thực hiện : 1/7/2019
-- Link online : ...
+- Link online : [Live](https://hieunguyenbbr1501.github.io/mix_demo/public/)
