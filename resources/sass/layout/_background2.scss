@@ -15,6 +15,9 @@
     z-index: 100;
     max-width: $max-width;
     margin: 100px auto;
+    @include media1170 {
+        margin: 0;
+    }
     @include media950 {
         top: 0;
     }
@@ -124,8 +127,5 @@
     .fa-caret-right {
         margin-left: 8px;
         margin-top: 5px;
-    }
-    @include media950 {
-        padding-bottom: 0;
     }
 }
