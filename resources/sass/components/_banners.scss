@@ -16,7 +16,7 @@
             width: 70%;
             margin-bottom: 30px;
         }
-        @include media673 {
+        @include media697 {
             width: 90%;
         }
         @include media550 {
@@ -114,7 +114,7 @@
                         @include media830 {
                             font-size: 30px;
                         }
-                        @include media673 {
+                        @include media697 {
                             font-size: 24px;
                         }
                     }
@@ -125,7 +125,7 @@
                         @include media830 {
                             font-size: 30px;
                         }
-                        @include media673 {
+                        @include media697 {
                             font-size: 24px;
                         }
                     }
@@ -189,7 +189,7 @@
 }
 
 #slider-4 {
-    @include media509 {
+    @include media550 {
         display: none;
     }
 }

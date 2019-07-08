@@ -95,12 +95,6 @@
     }
 }
 
-@mixin media931 {
-    @media screen and (max-width: 931px) {
-        @content;
-    }
-}
-
 @mixin media830 {
     @media screen and (max-width: 830px) {
         @content;
@@ -119,20 +113,8 @@
     }
 }
 
-@mixin media673 {
-    @media screen and (max-width: 673px) {
-        @content;
-    }
-}
-
 @mixin media550 {
     @media screen and (max-width: 550px) {
-        @content;
-    }
-}
-
-@mixin media509 {
-    @media screen and (max-width: 509px) {
         @content;
     }
 }
