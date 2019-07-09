@@ -1,8 +1,10 @@
 .body1 {
+    background: url('../images/background-body.png') no-repeat;
     height: 1057px;
     background-size: 100% 100%;
     z-index: 1;
     @include media1170 {
+        background: url(../images/background-body-alt.png) no-repeat;
         background-size: 100% 100%;
         height: auto;
         padding-bottom: 250px;
@@ -13,6 +15,7 @@
 }
 
 .top-body {
+    background: url(../images/background-header-top.png);
     background-size: cover;
 }
 
@@ -201,6 +204,7 @@
 
 .nav {
     @include media950 {
+        background: url(../images/background-header-top.png);
         margin-top: 40px;
         overflow: hidden;
         list-style: none;

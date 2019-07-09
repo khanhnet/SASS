@@ -16,10 +16,13 @@
 }
 
 .floater-1-banner-1 {
+  background: url(../images/banner-1.png?c7e8893c621e58dd2af5868f0c6bf81b);
   background-size: cover;
+  padding-bottom: 2%;
 }
 
 .floater-1-banner-2 {
+  background: url(../images/banner-2.png?e5d2e448cf147aa367f1fcefc170cacd);
   padding-bottom: 2%;
   background-size: cover;
 }
@@ -540,6 +543,7 @@
 }
 
 .header {
+  background: url(../images/background-header.png?e413fbfc745e3da87ec41684d7ddff4d) repeat 0 0;
   width: 100%;
   background-size: 100% 100%;
   height: 74px;
@@ -605,6 +609,7 @@
 }
 
 .body1 {
+  background: url(../images/background-body.png?22c1c10d105b9c9949a33122a093e7b8) no-repeat;
   height: 1057px;
   background-size: 100% 100%;
   z-index: 1;
@@ -612,6 +617,7 @@
 
 @media screen and (max-width: 1170px) {
   .body1 {
+    background: url(../images/background-body-alt.png?37e650d4db5c91b338a2f733c8d014f1) no-repeat;
     background-size: 100% 100%;
     height: auto;
     padding-bottom: 250px;
@@ -625,6 +631,7 @@
 }
 
 .top-body {
+  background: url(../images/background-header-top.png?9186e0f9046266e50b1c898fcb6f688a);
   background-size: cover;
 }
 
@@ -875,6 +882,7 @@
 
 @media screen and (max-width: 950px) {
   .nav {
+    background: url(../images/background-header-top.png?9186e0f9046266e50b1c898fcb6f688a);
     margin-top: 40px;
     overflow: hidden;
     list-style: none;
@@ -907,6 +915,7 @@
 }
 
 .background-2 {
+  background: url(../images/background-2.png?a07d5677fccc5fc4644950656e0c5ef7);
   height: 1100px;
   z-index: 1;
   overflow: visible;
@@ -920,6 +929,7 @@
 }
 
 .floater-1 {
+  background-image: url(../images/floater-BG.png?28b2bdec632387c67063c49ba969c3ee);
   top: -70px;
   overflow-y: none;
   position: relative;
@@ -1086,6 +1096,7 @@
 }
 
 .background-3 {
+  background: url(../images/background-3.png?9cf2c17d10688186eb499f1d6071480e);
   z-index: 1;
   color: #515151;
   height: 888px;
@@ -1143,6 +1154,7 @@
 }
 
 .background-4 {
+  background: url(../images/background-4.png?a07d5677fccc5fc4644950656e0c5ef7);
   background-size: contain;
   height: 900px;
   position: relative;
@@ -1155,6 +1167,7 @@
 }
 
 .background-4 .floater-2 {
+  background: url(../images/floater-BG.png?28b2bdec632387c67063c49ba969c3ee);
   top: -70px;
   position: relative;
   z-index: 100;
@@ -1347,6 +1360,7 @@
 }
 
 .background-logo {
+  background: url(../images/background-logo.png?f71577352809640854b85b3e51d5361f);
   height: 500px;
   z-index: 1;
 }
@@ -1382,6 +1396,7 @@
 }
 
 .footer {
+  background: url(../images/background-footer.png?127ea213c68befcd24d581e70bcc6d4c);
   background-size: cover;
   overflow: hidden;
   color: #fff;
