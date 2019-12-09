@@ -1,37 +1,37 @@
 @for $i from 5 through 50 {
 
   .pdr-#{$i} {
-    @if $i%5 {padding-right: #{$i}px;}
+    @if $i%5 {padding-right: #{$i}px !important;}
   }
 }
 @for $i from 5 through 50 {
 
   .pdt-#{$i} {
-    @if $i%5 {padding-top: #{$i}px;}
+    @if $i%5 {padding-top: #{$i}px !important;}
   }
 }
 @for $i from 5 through 50 {
 
   .pdl-#{$i} {
-    @if $i%5 {padding-left: #{$i}px;}
+    @if $i%5 {padding-left: #{$i}px !important;}
   }
 }
 @for $i from 5 through 50 {
 
   .pdb-#{$i} {
-    @if $i%5 {padding-bottom: #{$i}px;}
+    @if $i%5 {padding-bottom: #{$i}px !important;}
   }
 }
 @for $i from 5 through 60 {
 
   .mrt-#{$i} {
-    @if $i%5 {margin-top: #{$i}px;}
+    @if $i%5 {margin-top: #{$i}px !important;}
   }
 }
 @for $i from 5 through 60 {
 
   .mrb-#{$i} {
-    @if $i%5 {margin-bottom: #{$i}px;}
+    @if $i%5 {margin-bottom: #{$i}px !important;}
   }
 }
 .row {
@@ -155,12 +155,12 @@
 
 .text{
   &--right{
-    text-align: right;
+    text-align: right !important;
   }
   &--left{
-    text-align: left;
+    text-align: left !important;
   }
   &--center{
-    text-align: center;
+    text-align: center !important;
   }
 }
