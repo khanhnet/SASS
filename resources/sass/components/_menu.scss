@@ -1,0 +1,19 @@
+.menu{
+	margin: auto;
+	padding: 0px;
+	& a:hover{
+		border-radius: 11px;
+		background-color: $green;
+		color: $white;
+	}
+	&__icon{
+		max-width: 50px;
+	}
+& a {
+	display: inline-block;
+	font-size: 13px;
+	line-height: 16px;
+	padding: 10px 20px;
+	text-align: center;
+}
+}

@@ -1,0 +1,166 @@
+@for $i from 5 through 50 {
+
+  .pdr-#{$i} {
+    @if $i%5 {padding-right: #{$i}px;}
+  }
+}
+@for $i from 5 through 50 {
+
+  .pdt-#{$i} {
+    @if $i%5 {padding-top: #{$i}px;}
+  }
+}
+@for $i from 5 through 50 {
+
+  .pdl-#{$i} {
+    @if $i%5 {padding-left: #{$i}px;}
+  }
+}
+@for $i from 5 through 50 {
+
+  .pdb-#{$i} {
+    @if $i%5 {padding-bottom: #{$i}px;}
+  }
+}
+@for $i from 5 through 60 {
+
+  .mrt-#{$i} {
+    @if $i%5 {margin-top: #{$i}px;}
+  }
+}
+@for $i from 5 through 60 {
+
+  .mrb-#{$i} {
+    @if $i%5 {margin-bottom: #{$i}px;}
+  }
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+
+%grid-column {
+  position: relative;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+@for $i from 1 through $columns {
+  .col-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i} {
+    @extend %grid-column;
+  }
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    flex: 0 0 ($i/$columns)*100%;
+    max-width: ($i/$columns)*100%;
+  }
+}
+@include mediaSm {
+  @for $i from 1 through $columns {
+    .col-sm-#{$i} {
+      flex: 0 0 ($i/$columns)*100%;
+      max-width: ($i/$columns)*100%;
+    }
+  }
+}
+
+@include mediaMd {
+  @for $i from 1 through $columns {
+    .col-md-#{$i} {
+      flex: 0 0 ($i/$columns)*100%;
+      max-width: ($i/$columns)*100%;
+    }
+  }
+}
+
+
+@include mediaLg {
+  @for $i from 1 through $columns {
+    .col-lg-#{$i} {
+      flex: 0 0 ($i/$columns)*100%;
+      max-width: ($i/$columns)*100%;
+    }
+  }
+}
+@include mediaSm {
+  .d-sm-none {
+    display: none;
+  }
+  
+  .d-sm-block {
+    display: block;
+  }
+}
+
+@include mediaMd {
+  .d-md-none {
+    display: none;
+  }
+  
+  .d-md-block {
+    display: block;
+  }
+}
+
+@include mediaLg {
+  .d-lg-none {
+    display: none;
+  }
+  
+  .d-lg-block {
+    display: block;
+  }
+}
+.width{
+  &--full {
+    width: 100%;
+  }
+  &--auto{
+    width: auto;
+  }
+}
+.container {
+  width: 100%;
+  padding:{
+    right: 10%;
+    left: 10%;
+  }
+  margin:{
+    right: auto;
+    left: auto;
+  }
+}
+.color{
+  &--green{
+    color:$green;
+  }
+  &--white{
+    color:$white;
+  }
+  &--gray{
+    color:$gray;
+  }
+  &--gray-footer{
+    color:$gray-footer;
+  }
+
+}
+
+.text{
+  &--right{
+    text-align: right;
+  }
+  &--left{
+    text-align: left;
+  }
+  &--center{
+    text-align: center;
+  }
+}

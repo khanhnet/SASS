@@ -1,0 +1,50 @@
+.btn{
+	padding: 10px 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    color: $white;
+    border-radius: 11px;
+    background-color: $green;
+    &__submit{
+        @extend  .btn;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+.slide__arrow{
+	margin: auto 0px;
+    padding: 0px !important;
+    & img{
+        width: auto;
+    }
+}
+
+.input{
+	&__bg{
+		&--gray{
+			background-color: $gray-bg-input;
+			border-radius: 11px;
+			line-height: 35px;
+            @extend .width--full;
+            @extend .mrb-10;
+            &::placeholder {
+                color:$gray;
+                font-size: 13px;
+                line-height: 16px;
+                @extend .pdl-10; 
+            }
+        }
+    }
+}
+
+.textarea{
+    &__bg{
+        &--gray{
+            @extend .input__bg--gray ;
+            &::placeholder {
+                @extend .pdt-10; 
+            }
+        }
+    }
+}

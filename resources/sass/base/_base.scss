@@ -1,43 +1,64 @@
 *,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+::after,
+::before {
+    box-sizing: border-box
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent
+}
+
+@-ms-viewport {
+    width: device-width
+}
+
+footer,
+header,
+main,
+nav,
+section {
+    display: block
 }
 
 body {
-    width: 100%;
-    margin: 0 auto;
-    background-size: 100% 100%;
-    overflow-x: hidden;
-    font-family: $font;
+    margin: 0;
+    font-family:"Georgia";
+    font-size: 1rem;
+    font-weight: 400;
+    color: $red;
+    text-align: left;
+    background-color: $red;
 }
 
-strong {
-    font-weight: $extra-bold;
-}
-
-nav {
-    display: inline;
+p {
+    margin: 0;
 }
 
 a {
+    color: $green;
     text-decoration: none;
-    color: $white;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
 }
 
-button {
-    cursor: pointer;
+img {
+    vertical-align: middle;
+    border-style: none;
+    @extend .width--full;
 }
 
-h1,
-h4 {
-    background: #000000;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: #000000;
-    &:hover {
-        color: transparent;
-    }
+button,
+textarea,
+input {
+    overflow: visible;
+    border: none;
+}
+ul , li {
+  list-style: none;
+  padding: 0;
 }
