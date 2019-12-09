@@ -19,8 +19,6 @@ html {
 
 footer,
 header,
-main,
-nav,
 section {
     display: block
 }
@@ -52,7 +50,6 @@ img {
     @extend .width--full;
 }
 
-button,
 textarea,
 input {
     overflow: visible;
