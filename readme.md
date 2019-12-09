@@ -3,7 +3,7 @@
 
 - Tìm hiểu về Sass
 - Sử dụng Laravel mix để compiler Sass sang css
--Ôn lại responsive
+- Ôn lại responsive
 
 Thực hiện bởi: [Nguyễn Văn Khánh ](https://github.com/khanhnet/)
 
@@ -24,3 +24,4 @@ https://viblo.asia/p/bai-28-hieu-chinh-xac-ve-responsive-web-design-va-cach-chia
 - Kiến thức về scss (cú pháp, biến, function, mixin, ...)
 - Cấu trúc thư mục scss (7-1 pattern, SMACSS)
 - Webpack và sử dụng laravel mix để compiler scss
+- Đặt tên class theo BEM
