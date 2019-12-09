@@ -1,0 +1,64 @@
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent
+}
+
+@-ms-viewport {
+    width: device-width
+}
+
+footer,
+header,
+main,
+nav,
+section {
+    display: block
+}
+
+body {
+    margin: 0;
+    font-family:"Georgia";
+    font-size: 1rem;
+    font-weight: 400;
+    color: $red;
+    text-align: left;
+    background-color: $red;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: $green;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    @extend .width--full;
+}
+
+button,
+textarea,
+input {
+    overflow: visible;
+    border: none;
+}
+ul , li {
+  list-style: none;
+  padding: 0;
+}

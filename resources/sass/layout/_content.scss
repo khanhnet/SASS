@@ -1,0 +1,50 @@
+
+.article{
+	background-color: $white;
+	text-align: center;
+	padding: 15px 25px 25px 25px;
+	&__title{
+		font-size: 32px;
+		line-height: 32px;
+		color: $gray-dark;
+	}
+	&__content{
+		font-size: 12px;
+		line-height: 17px;
+		color: $gray;
+	}
+	&:hover{
+		background-color: $green;
+		.article__content, .article__title {
+			color:$white;
+		}
+	}
+}
+
+.meet{
+	text-align: center;
+	padding-top: 40px;
+	&__title{
+		font-size: 32px;
+		line-height: 38px;
+		color: $white;
+		border-radius: 11px;
+		background-color: $gray-dark;
+		padding: 10px;
+	}
+}
+
+.image__show{
+	&--border{
+		border: 5px $white solid;
+		&:hover{
+		border: 5px $green solid;
+		}
+	}
+	&--text{
+		font-size: 14px;
+		line-height: 17px;
+		color: $white;
+	}
+
+}

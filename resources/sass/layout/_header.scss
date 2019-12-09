@@ -1,0 +1,13 @@
+.header{
+	@extend .width--full;
+	background-color: $red-dark;
+	&__content{
+		justify-content: space-between;
+	}
+}
+.header__border--top{
+    @extend .width--full;
+    margin: auto;
+    height: 5px;
+    background-color: $green;
+}

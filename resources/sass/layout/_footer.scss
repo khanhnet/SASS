@@ -1,0 +1,39 @@
+.footer{
+	background-color: $gray-footer;
+	&__title{
+		font-size: 16px;
+		line-height: 19px;
+		@extend .pdt-20;
+		color: $white;
+		&--green{
+			font-size: 13px;
+			line-height: 16px;
+			@extend.color--green;
+		}
+	}
+	&__info{
+		font-size: 10px;
+		line-height: 12px;
+		@extend.color--gray;
+	}
+	&__content{
+		font-size: 13px;
+		line-height: 21px;
+		@extend.color--gray;
+	}
+}
+.quick__link{
+	font-size: 13px;
+	line-height: 34px;
+	@extend .color--green;
+	&--border{
+		border-bottom: 1px $gray-border-footer solid;
+		line-height: 30px;
+	}
+}
+
+.copyright{
+	font-size: 13px;
+	line-height: 13px;
+	background-color: $copyright-bg;
+}
