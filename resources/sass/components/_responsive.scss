@@ -62,7 +62,11 @@
   .quick__link{
     @include font-line(15,34);
   }
-
+  .article{
+    &__content {
+      @include font-line(15,17);
+    }
+  }
 }
 
 @include mediaMd {
