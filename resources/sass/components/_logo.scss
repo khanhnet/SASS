@@ -2,13 +2,11 @@
 	padding: 0px;
 	.title{
 		display: block;
-		font-size: 28px;
-		line-height: 28px;
+		@include font-line(28,28);
 		color: $white;
 	}
 	.sologan{
-		font-size: 11px;
-		line-height: 11px;
+		@include font-line(11,11);
 		color: $gray;
 	}
 }

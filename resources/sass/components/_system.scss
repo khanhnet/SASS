@@ -34,6 +34,9 @@
     @if $i%5 {margin-bottom: #{$i}px !important;}
   }
 }
+.pd-0{
+  padding: 0px !important;
+}
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -58,63 +61,15 @@
 
 @for $i from 1 through $columns {
   .col-#{$i} {
-    flex: 0 0 ($i/$columns)*100%;
-    max-width: ($i/$columns)*100%;
+    flex: 0 0 column-width($i,$columns);
+    max-width: column-width($i,$columns);
   }
 }
-@include mediaSm {
-  @for $i from 1 through $columns {
-    .col-sm-#{$i} {
-      flex: 0 0 ($i/$columns)*100%;
-      max-width: ($i/$columns)*100%;
-    }
-  }
-}
-
-@include mediaMd {
-  @for $i from 1 through $columns {
-    .col-md-#{$i} {
-      flex: 0 0 ($i/$columns)*100%;
-      max-width: ($i/$columns)*100%;
-    }
-  }
-}
-
-
-@include mediaLg {
-  @for $i from 1 through $columns {
-    .col-lg-#{$i} {
-      flex: 0 0 ($i/$columns)*100%;
-      max-width: ($i/$columns)*100%;
-    }
-  }
-}
-@include mediaSm {
-  .d-sm-none {
+.d{
+  &-none{
     display: none;
   }
-  
-  .d-sm-block {
-    display: block;
-  }
-}
-
-@include mediaMd {
-  .d-md-none {
-    display: none;
-  }
-  
-  .d-md-block {
-    display: block;
-  }
-}
-
-@include mediaLg {
-  .d-lg-none {
-    display: none;
-  }
-  
-  .d-lg-block {
+  &-block{
     display: block;
   }
 }
@@ -128,39 +83,18 @@
 }
 .container {
   width: 100%;
-  padding:{
-    right: 10%;
-    left: 10%;
-  }
   margin:{
     right: auto;
     left: auto;
   }
 }
-.color{
-  &--green{
-    color:$green;
+@each $name, $rgb in $colors {
+  .color--#{$name} {
+    color:#{$rgb};
   }
-  &--white{
-    color:$white;
-  }
-  &--gray{
-    color:$gray;
-  }
-  &--gray-footer{
-    color:$gray-footer;
-  }
-
 }
-
-.text{
-  &--right{
-    text-align: right !important;
-  }
-  &--left{
-    text-align: left !important;
-  }
-  &--center{
-    text-align: center !important;
+@each $location in $locations {
+  .text--#{$location} {
+    text-align: #{$location} !important;
   }
 }

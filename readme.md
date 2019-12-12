@@ -4,6 +4,7 @@
 - Tìm hiểu về Sass
 - Sử dụng Laravel mix để compiler Sass sang css
 - Ôn lại responsive
+- Ôn lại JS,Jquery.
 
 Thực hiện bởi: [Nguyễn Văn Khánh ](https://github.com/khanhnet/)
 

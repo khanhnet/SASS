@@ -1,0 +1,98 @@
+@include mediaSm {
+  @for $i from 1 through $columns {
+    .col-sm-#{$i} {
+      flex: 0 0 column-width($i,$columns);
+      max-width: column-width($i,$columns);
+    }
+  }
+}
+
+@include mediaMd {
+  @for $i from 1 through $columns {
+    .col-md-#{$i} {
+      flex: 0 0 ($i/$columns)*100%;
+      max-width: ($i/$columns)*100%;
+    }
+  }
+}
+
+
+@include mediaLg {
+  @for $i from 1 through $columns {
+    .col-lg-#{$i} {
+      flex: 0 0 column-width($i,$columns);
+      max-width: column-width($i,$columns);
+    }
+  }
+}
+@include mediaSm {
+  .container{
+    padding:{
+      right: 10px;
+      left: 10px;
+    }
+  }
+  .d-sm-none {
+    display: none;
+  }
+  
+  .d-sm-block {
+    display: block;
+  }
+  .meet{
+    &__title{
+      @include font-line(25,28);
+    }
+  }
+  .footer{
+    &__title{
+      @include font-line(16,19);
+      color: $white;
+      &--green{
+        @include font-line(15,18);
+      }
+    }
+    &__info{
+      @include font-line(12,14);
+    }
+    &__content{
+      @include font-line(14,21);
+    }
+  }
+  .quick__link{
+    @include font-line(15,34);
+  }
+
+}
+
+@include mediaMd {
+  .d-md-none {
+    display: none;
+  }
+  .container{
+    padding:{
+      right: 5%;
+      left: 5%;
+    }
+  }
+  
+  .d-md-block {
+    display: block;
+  }
+}
+
+@include mediaLg {
+  .container{
+    padding:{
+      right: 10%;
+      left: 10%;
+    }
+  }
+  .d-lg-none {
+    display: none;
+  }
+  
+  .d-lg-block {
+    display: block;
+  }
+}

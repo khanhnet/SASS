@@ -4,13 +4,11 @@
 	text-align: center;
 	padding: 15px 25px 25px 25px;
 	&__title{
-		font-size: 32px;
-		line-height: 32px;
+		@include font-line(32,32);
 		color: $gray-dark;
 	}
 	&__content{
-		font-size: 12px;
-		line-height: 17px;
+		@include font-line(12,17);
 		color: $gray;
 	}
 	&__image{
@@ -26,8 +24,7 @@
 
 .meet{
 	&__title{
-		font-size: 32px;
-		line-height: 38px;
+		@include font-line(32,38);
 		color: $white;
 		border-radius: 11px;
 		background-color: $gray-dark;
@@ -43,9 +40,11 @@
 		}
 	}
 	&--text{
-		font-size: 14px;
-		line-height: 17px;
+		@include font-line(14,17);
 		color: $white;
+	}
+	&--none{
+		@extend .d-none;
 	}
 
 }

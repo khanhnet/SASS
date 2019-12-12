@@ -8,9 +8,8 @@
 	}
 & a {
 	display: inline-block;
-	font-size: 13px;
-	line-height: 16px;
-	padding: 10px 20px;
+	@include font-line(13,16);
+	padding: 10px 15px;
 	text-align: center;
 }
 }

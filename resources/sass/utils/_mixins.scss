@@ -15,6 +15,10 @@
 		@content; 
 	}
 }
+@mixin font-line($font,$line) {
+	font-size: #{$font}px;
+	line-height: #{$line}px;
+}
 @mixin menu-drop {
 	.dropdown {
 		position: relative;
@@ -34,4 +38,9 @@
 	.dropdown:hover .dropdown-content {
 		display: block;
 	}
+}
+
+@function column-width($i,$columns) {  
+	$result:($i/$columns)*100%;
+	@return $result;
 }
