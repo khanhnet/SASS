@@ -1,39 +1,27 @@
-@for $i from 5 through 50 {
+@for $i from 5 through 100 {
+  @if $i%5 {
+    .pdr-#{$i} {
+      padding-right: #{$i}px !important;
+    }
+    .pdt-#{$i} {
+      padding-top: #{$i}px !important;
+    }
+    .pdl-#{$i} {
+      padding-left: #{$i}px !important;
+    }
+    .pdb-#{$i} {
+      padding-bottom: #{$i}px !important;
+    }
 
-  .pdr-#{$i} {
-    @if $i%5 {padding-right: #{$i}px !important;}
+    .mrt-#{$i} {
+      margin-top: #{$i}px !important;
+    }
+    .mrb-#{$i} {
+      margin-bottom: #{$i}px !important;
+    }
   }
 }
-@for $i from 5 through 50 {
 
-  .pdt-#{$i} {
-    @if $i%5 {padding-top: #{$i}px !important;}
-  }
-}
-@for $i from 5 through 50 {
-
-  .pdl-#{$i} {
-    @if $i%5 {padding-left: #{$i}px !important;}
-  }
-}
-@for $i from 5 through 50 {
-
-  .pdb-#{$i} {
-    @if $i%5 {padding-bottom: #{$i}px !important;}
-  }
-}
-@for $i from 5 through 60 {
-
-  .mrt-#{$i} {
-    @if $i%5 {margin-top: #{$i}px !important;}
-  }
-}
-@for $i from 5 through 60 {
-
-  .mrb-#{$i} {
-    @if $i%5 {margin-bottom: #{$i}px !important;}
-  }
-}
 .pd-0{
   padding: 0px !important;
 }
@@ -57,14 +45,12 @@
   .col-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i} {
     @extend %grid-column;
   }
-}
-
-@for $i from 1 through $columns {
   .col-#{$i} {
     flex: 0 0 column-width($i,$columns);
     max-width: column-width($i,$columns);
   }
 }
+
 .d{
   &-none{
     display: none;

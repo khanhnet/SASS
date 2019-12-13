@@ -43,8 +43,5 @@
 		@include font-line(14,17);
 		color: $white;
 	}
-	&--none{
-		@extend .d-none;
-	}
 
 }
